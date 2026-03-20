@@ -1,0 +1,7 @@
+<h1>Produtos</h1>
+<ul>
+    {{#each produtos}}
+    <li>{{@index}} - {{this.nome}}</li>
+    <a href="/{{@index}}">Detalhes do produto</a>
+    {{/each}}
+</ul>

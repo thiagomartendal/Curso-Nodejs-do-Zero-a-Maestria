@@ -1,0 +1,12 @@
+<h1>Usuário: {{user.name}}</h1>
+<h2>Email: {{user.email}}</h2>
+<h2>Idade: {{user.age}}</h2>
+{{#if approved}}
+<p>Cadastro aprovado.</p>
+<h3>Status: {{status}}.</h3>
+{{else}}
+<p>Cadastro não aprovado.</p>
+{{/if}}
+{{#if auth}}
+    <p>Usuário autenticado: <a href="/dashboard">acesse aqui</a>.</p>
+{{/if}}
