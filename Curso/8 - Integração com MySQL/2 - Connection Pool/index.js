@@ -79,6 +79,11 @@ app.get('/books/edit/:id', (req, res) => {
     })
 })
 
+/*
+    Navegadores web não implementam métodos PUT e DELETE diretamente para formulários HTML,
+    por isso as rotas para edição e exclusão de dados são definidas com método POST
+*/
+
 app.post('/books/updatebook', (req, res) => {
     const id = req.body.id
     const title = req.body.title

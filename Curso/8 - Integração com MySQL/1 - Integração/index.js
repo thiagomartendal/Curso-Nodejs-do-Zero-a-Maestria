@@ -21,8 +21,8 @@ app.set('views', path.join(__dirname, 'views'))
 // Definição dos parâetros de conexão
 const conn = mysql.createConnection({
     host: 'localhost',
-    user: '', // Informar o nome de usuário do servidor mysql
-    password: '', // Informar a senha do servidor mysql
+    user: 'root',
+    password: 'Node@1234',
     database: 'nodemysql'
 })
 
@@ -96,6 +96,11 @@ app.get('/books/edit/:id', (req, res) => {
         res.render('editBook', {book})
     })
 })
+
+/*
+    Navegadores web não implementam métodos PUT e DELETE diretamente para formulários HTML,
+    por isso as rotas para edição e exclusão de dados são definidas com método POST
+*/
 
 app.post('/books/updatebook', (req, res) => {
     const id = req.body.id
