@@ -1,0 +1,22 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  color: #16479d;
+  margin-bottom: 1em;
+  font-size: 2.1em;
+}
+
+.bold {
+  font-weight: bold;
+  color: #16479d;
+}
