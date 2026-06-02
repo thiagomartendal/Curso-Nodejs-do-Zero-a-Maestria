@@ -1,0 +1,19 @@
+h1 {
+    color: blue;
+}
+
+h2 {
+    color: green;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: darkcyan;
+}
+
+li {
+    color: darkblue;
+}
