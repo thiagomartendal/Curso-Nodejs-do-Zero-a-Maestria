@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pensamentos</title>
+        <link href="/img/favicon.ico" type="image/x-icon" rel="shortcut icon" />
+        <link href="/css/style.css" type="text/css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+        <nav id="navbar">
+            <a href="/" id="logo">
+                <img src="/img/logo.png" alt="Pensamentos" />
+            </a>
+            <ul>
+                <li><a href="/">Pensamentos</a></li>
+                {{#if session.userid}}
+                    <li><a href="/toughts/dashboard">Dashboard</a></li>
+                    <li><a href="/logout">Sair</a></li>
+                {{else}}
+                    <li><a href="/login">Entrar</a></li>
+                    <li><a href="/register">Registrar-se</a></li>
+                {{/if}}
+            </ul>
+        </nav>
+        <div class="container">
+            {{#if message}}
+                <div class="message">
+                    {{message}}
+                </div>
+            {{/if}}
+            {{{body}}}
+        </div>
+        <footer>
+            <p>
+                <span>Pensamentos</span> &copy; 2026
+            </p>
+        </footer>
+    </body>
+</html>

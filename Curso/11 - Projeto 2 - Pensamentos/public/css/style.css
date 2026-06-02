@@ -1,0 +1,278 @@
+* {
+    background-color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+
+#logo img {
+    height: 40px;
+}
+
+#logo img:hover {
+    opacity: 0.8;
+}
+
+#navbar {
+    border-bottom: 1px solid #f6982d;
+    background-color: #222;
+    padding: 1.2em 1.4em;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+#navbar ul li {
+    margin-left: 1em;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+#navbar ul li a:hover {
+    color: #f6982d;
+}
+
+.container {
+    min-height: 60vh;
+    padding: 2em;
+}
+
+.message {
+    border: 1px solid #b8daff;
+    background-color: #cce5ff;
+    padding: 1em;
+    color: #004085;
+    text-align: center;
+    margin: 0px auto 2em;
+    max-width: 60%;
+}
+
+.auth-container {
+    max-width: 450px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-container h2 {
+    border-left: 4px solid #f6982d;
+    margin-bottom: 1em;
+    padding: 0.3em;
+    width: 150px;
+    color: #fff;
+}
+
+.auth-container a {
+    color: #f6982d;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.form-control label {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.form-control input,
+.form-control textarea {
+    border: 1px solid #f6982d;
+    border-radius: 3px;
+    padding: 7px;
+}
+
+form input[type="submit"],
+.btn {
+    border: 2px solid #f6982d;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #f6982d;
+    padding: 0.5em 1.2em;
+    margin-bottom: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+form input[type="submit"]:hover,
+.btn:hover {
+    background-color: #f6982d;
+    color: #fff;
+}
+
+.tought-form-container a {
+    color: #f6982d;
+}
+
+.tought-form-container a:hover {
+    color: #fff;
+}
+
+.tought-form-container h1 {
+    border-left: 4px solid #f6982d;
+    margin: 1em 0px;
+    color: #fff;
+    padding: 0.3em;
+}
+
+.tought-form-container form {
+    max-width: 30%;
+    margin-top: 1.5em;
+}
+
+.title-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5em;
+}
+
+.title-container h2 {
+    border-left: 4px solid #f6982d;
+    padding: 10px;
+}
+
+.dashboard h3 {
+    margin-bottom: 1.5em;
+}
+
+.dashboard ul {
+    list-style: none;
+}
+
+.dashboard li {
+    padding: 12px;
+    border-bottom: 1px solid #f6982d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard .label {
+    font-weight: bold;
+    color: #f6982d;
+}
+
+.dashboard .actions {
+    display: flex;
+}
+
+.dashboard .actions .btn {
+    border-color: #fff;
+    color: #fff;
+    margin: 0px 0.5em;
+}
+
+.home-header {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.home-header h1 {
+    margin-bottom: 1em;
+}
+
+.home-header span {
+    color: #f6982d;
+}
+
+.home-header p,
+.home-header form {
+    margin-bottom: 1.2em;
+}
+
+.home-header input {
+    border: none;
+    border-bottom: 1px solid #fff;
+    padding: 0.5em;
+    margin-right: 1em;
+}
+
+.home-header input[type="text"] {
+    width: 60%;
+}
+
+.home-header input::placeholder {
+    color: #fff;
+}
+
+.order-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    margin: 0px auto 1em;
+}
+
+.order-container span {
+    font-weight: bold;
+    color: #fff;
+}
+
+.order-container form {
+    margin: 0px;
+}
+
+.order-container button {
+    border: none;
+    margin-bottom: 0px;
+    cursor: pointer
+}
+
+.order-container i:hover,
+.order-container a:hover {
+    color: #f6982d;
+}
+
+.order-container button,
+.order-container a {
+    margin: 0px 7px;
+}
+
+.toughts-container figure {
+    border-bottom: 1px solid #333;
+    padding: 0.5em;
+    max-width: 50%;
+    margin: 0px auto 1em;
+}
+
+.toughts-container blockquote {
+    font-style: italic;
+    font-size: 2em;
+    margin-bottom: 0.4em;
+}
+
+.toughts-container span {
+    color: #f6982d;
+}
+
+footer {
+    border-top: 1px solid #f6982d;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer span {
+    font-weight: bold;
+    color: #f6982d;
+}
