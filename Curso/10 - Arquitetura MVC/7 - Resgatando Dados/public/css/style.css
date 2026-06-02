@@ -1,0 +1,168 @@
+:root {
+    --border: firebrick;
+    --bg1: firebrick;
+    --bg2: white;
+    --text1: white;
+    --text2: firebrick;
+    --text3: darkred;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: var(--text2);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--text3);
+}
+
+
+#navbar {
+    background-color: var(--bg1);
+    padding: 1em 2em;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text1);
+}
+
+#navbar a {
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em;
+    color: var(--text1);
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    background-color: var(--bg2);
+    color: var(--text3);
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0px;
+}
+
+#navbar ul li {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.container {
+    margin: 2em auto;
+    max-width: 450px;
+}
+
+.container h1 {
+    text-align: center;
+    color: var(--text2);
+}
+
+.container form {
+    margin-top: 1.5em;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.form-control label {
+    font-weight: bold;
+    margin-bottom: 0.3em;
+    color: var(--text2);
+}
+
+.form-control input,
+.form-control textarea {
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    padding: 7px;
+}
+
+.form-control input[type="text"],
+.form-control textarea {
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    background-color: var(--bg1);
+    padding: 0.7em 1.5em;
+    font-weight: bold;
+    color: var(--text1);
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--bg2);
+    color: var(--text2);
+}
+
+.task-list {
+    list-style: none;
+    margin-top: 1em;
+}
+
+.task-list li {
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 1em;
+    padding: 0.5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.task-list .title {
+    font-weight: bold;
+    color: var(--text2);
+    transition: 0.5s;
+    font-size: 1.2em;
+}
+
+.task-list .title:hover {
+    color: rgba(178, 34, 34, 0.7);
+}
+
+.task-list .a1 {
+    color: lime;
+}
+
+.task-list .a1:hover {
+    color: darkgreen;
+}
+
+.task-list .a2 {
+    color: cadetblue;
+}
+
+.task-list .a2:hover {
+    color: darkblue;
+}
+
+.task-list .a3 {
+    color: orangered;
+}
+
+.task-list .a3:hover {
+    color: darkred;
+}
+
+.actions {
+    display: flex;
+}
+
+.actions i {
+    font-size: 1.5em;
+    margin-right: 0.6em;
+}

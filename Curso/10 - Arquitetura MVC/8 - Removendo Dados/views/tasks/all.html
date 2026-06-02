@@ -1,0 +1,18 @@
+<h1>Tarefas Cadastradas</h1>
+<ul class="task-list">
+    {{#each tasks}}
+        <li>
+            <a href="/" class="title">{{this.title}}</a>
+            <div class="actions">
+                <a href="/" class="a1"><i class="bi bi-check2" title="Concluir Tarefa"></i></a>
+                <a href="/" class="a2"><i class="bi bi-pencil-square" title="Editar Tarefa"></i></a>
+                <form action="/tasks/remove" method="POST">
+                    <input type="hidden" name="id" value="{{this.id}}" />
+                    <button type="submit" class="a3">
+                        <i class="bi bi-x-lg" title="Remover Tarefa"></i>
+                    </button>
+                </form>
+            </div>
+        </li>
+    {{/each}}
+</ul>
